@@ -100,8 +100,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "soul-digital:build:production",
+            "firebaseProject": "soul-digital-e499c",
+            "firebaseHostingSite": "soul-digital-e499c"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
